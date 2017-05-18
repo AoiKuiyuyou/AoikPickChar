@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-
+from __future__ import absolute_import
 
 # Standard-library imports
 import imp
@@ -11,7 +11,7 @@ import sys
 try:
     from urllib.request import urlopen  # Python 3
 except ImportError:
-    from urllib.request import urlopen  # Python 2
+    from urllib2 import urlopen  # Python 2
 
 #
 __version__ = '0.3'

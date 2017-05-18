@@ -2,7 +2,7 @@
 """
 This module contains function that sets up `sys.path` for import resolution.
 """
-
+from __future__ import absolute_import
 
 # Standard imports
 import os

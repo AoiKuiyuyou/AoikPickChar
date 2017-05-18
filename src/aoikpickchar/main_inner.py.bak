@@ -2,7 +2,7 @@
 """
 This module contains the main inner function called by the main module.
 """
-
+from __future__ import absolute_import
 
 # Standard imports
 from argparse import ArgumentParser
@@ -414,9 +414,10 @@ def main_inner(args=None):
     # If character pick function URI is not given
     if char_pick_func_uri is None:
         # Use default
-        char_pick_func = (lambda info: list(range(
+        char_pick_func = (lambda info: range(
             char_point_min if char_point_min is not None else 0,
-            char_point_max + 1 if char_point_max is not None else 256)))
+            char_point_max + 1 if char_point_max is not None else 256
+        ))
 
     # If character pick function URI is given
     else:

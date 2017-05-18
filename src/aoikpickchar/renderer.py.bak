@@ -2,7 +2,7 @@
 """
 This module contains functions that render characters to images.
 """
-
+from __future__ import absolute_import
 
 # External imports
 from PIL import Image
